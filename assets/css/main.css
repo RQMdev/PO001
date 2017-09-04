@@ -1,0 +1,46 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, sans-serif;
+}
+
+#learners-array {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.learner {
+	/*margin: 1rem;
+	padding: 1rem;*/
+	background-color: purple;
+	color: white;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	transition: 200ms;
+}
+
+input[type='radio'][id='all']:checked ~ #learners-array .learner,
+input[type='radio'][id='eggs']:checked ~ #learners-array .eggs,
+input[type='radio'][id='peanuts']:checked ~ #learners-array .peanuts,
+input[type='radio'][id='shellfish']:checked ~ #learners-array .shellfish,
+input[type='radio'][id='strawberrys']:checked ~ #learners-array .strawberrys,
+input[type='radio'][id='tomato']:checked ~ #learners-array .tomato,
+input[type='radio'][id='chocolate']:checked ~ #learners-array .chocolate,
+input[type='radio'][id='pollen']:checked ~ #learners-array .pollen,
+input[type='radio'][id='cats']:checked ~ #learners-array .cats,
+input[type='radio'][id='milk']:checked ~ #learners-array .milk,
+input[type='radio'][id='mites']:checked ~ #learners-array .mites {
+	width: auto;
+	height: auto;
+	margin: 1rem;
+	padding: 1rem;
+	opacity: 1;
+}
